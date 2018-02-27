@@ -81,7 +81,7 @@ def capsule(input, b_IJ, idx_j):
     Notes:
         u_i represents the vector output of capsule i in the layer l, and
         v_j the vector output of capsule j in the layer l+1.
-     '''
+    '''
 
     with tf.variable_scope('routing'):
         w_initializer = np.random.normal(size=[1, 1152, 8, 16], scale=0.01)
